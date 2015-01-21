@@ -9,6 +9,10 @@
 #ifndef __PHVector__
 #define __PHVector__
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdio.h>
 
 /*
@@ -116,4 +120,8 @@ PHVec3d PHCrossMul3d(PHVec3d v1, PHVec3d v2);
 //with modifying incoming result vector
 void PHCrossMul3dDirect(PHVec3d *v1, PHVec3d *v2, PHVec3d *result);
 
+#ifdef __cplusplus
+}
+#endif
+    
 #endif /* defined(__PHVector__) */

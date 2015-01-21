@@ -7,10 +7,7 @@
 //
 
 #include <iostream>
-
-extern "C" {
-    #include "PhysicsLib/PHVector.h"
-}
+#include "PhysicsLib/PHVector.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
