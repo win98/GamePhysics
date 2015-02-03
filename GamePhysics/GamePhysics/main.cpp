@@ -7,16 +7,17 @@
 //
 
 #include <iostream>
-#include "PhysicsLib/PHVector.h"
+#include "PHVector.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     
-    PHVec3d v1 = PHVec3dMake(0, 0, 10);
-    PHVec3d v2 = PHVec3dMake(10, 0, 0);
+    PHVec3d v1(0, 1, 0);
+    PHVec3d v2(1, 0, 0);
     PHVec3d v3;
-    PHCrossMul3dDirect(&v2, &v1, &v3);
+    
+    v3 = v1 + v2;
     
     return 0;
 }

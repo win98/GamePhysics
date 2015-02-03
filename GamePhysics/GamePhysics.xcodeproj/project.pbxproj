@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A57A99BC1A6FAE3C0096124A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A57A99BB1A6FAE3C0096124A /* main.cpp */; };
-		A57A99E21A6FD0FE0096124A /* PHVector.c in Sources */ = {isa = PBXBuildFile; fileRef = A57A99E11A6FD0FE0096124A /* PHVector.c */; };
+		A5FAA8811A80ED34009E4B3F /* PHVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5FAA8801A80ED34009E4B3F /* PHVector.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		A57A99B81A6FAE3C0096124A /* GamePhysics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GamePhysics; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57A99BB1A6FAE3C0096124A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		A57A99DD1A6FCEBD0096124A /* PHVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHVector.h; sourceTree = "<group>"; };
-		A57A99E11A6FD0FE0096124A /* PHVector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PHVector.c; sourceTree = "<group>"; };
+		A5FAA87E1A80EB6A009E4B3F /* PHVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHVector.h; sourceTree = "<group>"; };
+		A5FAA8801A80ED34009E4B3F /* PHVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PHVector.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +60,17 @@
 		A57A99BA1A6FAE3C0096124A /* GamePhysics */ = {
 			isa = PBXGroup;
 			children = (
-				A57A99DB1A6FCEBD0096124A /* PhysicsLib */,
+				A5FAA87C1A80EB6A009E4B3F /* PhysicsLib */,
 				A57A99BB1A6FAE3C0096124A /* main.cpp */,
 			);
 			path = GamePhysics;
 			sourceTree = "<group>";
 		};
-		A57A99DB1A6FCEBD0096124A /* PhysicsLib */ = {
+		A5FAA87C1A80EB6A009E4B3F /* PhysicsLib */ = {
 			isa = PBXGroup;
 			children = (
-				A57A99DD1A6FCEBD0096124A /* PHVector.h */,
-				A57A99E11A6FD0FE0096124A /* PHVector.c */,
+				A5FAA87E1A80EB6A009E4B3F /* PHVector.h */,
+				A5FAA8801A80ED34009E4B3F /* PHVector.cpp */,
 			);
 			path = PhysicsLib;
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57A99E21A6FD0FE0096124A /* PHVector.c in Sources */,
+				A5FAA8811A80ED34009E4B3F /* PHVector.cpp in Sources */,
 				A57A99BC1A6FAE3C0096124A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +216,8 @@
 		A57A99C01A6FAE3C0096124A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				LIBRARY_SEARCH_PATHS = GamePhysics/PhysicsLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +225,8 @@
 		A57A99C11A6FAE3C0096124A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				LIBRARY_SEARCH_PATHS = GamePhysics/PhysicsLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
