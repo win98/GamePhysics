@@ -16,7 +16,8 @@ int main(int argc, const char * argv[]) {
     PHVec3d v1(0, 1, 0);
     PHVec3d v2(1, 0, 0);
     PHVec3d v3;
-    
+    PHVec3d v4;
+    v3 = v1;
     v3 = v1 + v2;
     
     return 0;

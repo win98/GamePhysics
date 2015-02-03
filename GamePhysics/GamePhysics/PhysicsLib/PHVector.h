@@ -28,13 +28,13 @@ public:
     PHVec2d normalize();
     PHScalar scalarMul(PHVec2d &vec);
     
-    PHVec2d operator = (PHVec2d &vec);
-    PHVec2d operator + (PHVec2d &vec);
-    PHVec2d operator - (PHVec2d &vec);
-    PHVec2d operator += (PHVec2d &vec);
-    PHVec2d operator -= (PHVec2d &vec);
+    PHVec2d operator = (const PHVec2d &vec);
+    PHVec2d operator + (const PHVec2d &vec);
+    PHVec2d operator - (const PHVec2d &vec);
+    PHVec2d operator += (const PHVec2d &vec);
+    PHVec2d operator -= (const PHVec2d &vec);
     PHVec2d operator * (PHScalar mul);
-    friend PHVec2d operator * (PHScalar mul, PHVec2d &vec);
+    friend PHVec2d operator * (PHScalar mul, const PHVec2d &vec);
     PHVec2d operator / (PHScalar div);
     PHVec2d operator *= (PHScalar mul);
     PHVec2d operator /= (PHScalar div);
@@ -62,13 +62,13 @@ public:
     PHScalar scalarMul(PHVec3d &vec);
     PHVec3d crossMul(PHVec3d &vec);
     
-    PHVec3d operator = (PHVec3d &vec);
-    PHVec3d operator + (PHVec3d &vec);
-    PHVec3d operator - (PHVec3d &vec);
-    PHVec3d operator += (PHVec3d &vec);
-    PHVec3d operator -= (PHVec3d &vec);
+    PHVec3d operator = (const PHVec3d &vec);
+    PHVec3d operator + (const PHVec3d &vec);
+    PHVec3d operator - (const PHVec3d &vec);
+    PHVec3d operator += (const PHVec3d &vec);
+    PHVec3d operator -= (const PHVec3d &vec);
     PHVec3d operator * (PHScalar mul);
-    friend PHVec3d operator * (PHScalar mul, PHVec3d &vec);
+    friend PHVec3d operator * (PHScalar mul, const PHVec3d &vec);
     PHVec3d operator / (PHScalar div);
     PHVec3d operator *= (PHScalar mul);
     PHVec3d operator /= (PHScalar div);

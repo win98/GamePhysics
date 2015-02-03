@@ -61,7 +61,7 @@ PHVec3d PHVec3d::crossMul(PHVec3d &vec)
             x * vec.y - y * vec.x);
 }
 
-PHVec2d PHVec2d::operator = (PHVec2d &vec)
+PHVec2d PHVec2d::operator = (const PHVec2d &vec)
 {
     x = vec.x;
     y = vec.y;
@@ -69,7 +69,7 @@ PHVec2d PHVec2d::operator = (PHVec2d &vec)
     return *this;
 }
 
-PHVec3d PHVec3d::operator = (PHVec3d &vec)
+PHVec3d PHVec3d::operator = (const PHVec3d &vec)
 {
     x = vec.x;
     y = vec.y;
@@ -78,27 +78,27 @@ PHVec3d PHVec3d::operator = (PHVec3d &vec)
     return *this;
 }
 
-PHVec2d PHVec2d::operator + (PHVec2d &vec)
+PHVec2d PHVec2d::operator + (const PHVec2d &vec)
 {
     return PHVec2d(x + vec.x, y + vec.y);
 }
 
-PHVec3d PHVec3d::operator + (PHVec3d &vec)
+PHVec3d PHVec3d::operator + (const PHVec3d &vec)
 {
     return PHVec3d(x + vec.x, y + vec.y, z + vec.z);
 }
 
-PHVec2d PHVec2d::operator - (PHVec2d &vec)
+PHVec2d PHVec2d::operator - (const PHVec2d &vec)
 {
     return PHVec2d(x - vec.x, y - vec.y);
 }
 
-PHVec3d PHVec3d::operator - (PHVec3d &vec)
+PHVec3d PHVec3d::operator - (const PHVec3d &vec)
 {
     return PHVec3d(x - vec.x, y - vec.y, z - vec.z);
 }
 
-PHVec2d PHVec2d::operator += (PHVec2d &vec)
+PHVec2d PHVec2d::operator += (const PHVec2d &vec)
 {
     x += vec.x;
     y += vec.y;
@@ -106,7 +106,7 @@ PHVec2d PHVec2d::operator += (PHVec2d &vec)
     return *this;
 }
 
-PHVec3d PHVec3d::operator += (PHVec3d &vec)
+PHVec3d PHVec3d::operator += (const PHVec3d &vec)
 {
     x += vec.x;
     y += vec.y;
@@ -115,7 +115,7 @@ PHVec3d PHVec3d::operator += (PHVec3d &vec)
     return *this;
 }
 
-PHVec2d PHVec2d::operator -= (PHVec2d &vec)
+PHVec2d PHVec2d::operator -= (const PHVec2d &vec)
 {
     x -= vec.x;
     y -= vec.y;
@@ -123,7 +123,7 @@ PHVec2d PHVec2d::operator -= (PHVec2d &vec)
     return *this;
 }
 
-PHVec3d PHVec3d::operator -= (PHVec3d &vec)
+PHVec3d PHVec3d::operator -= (const PHVec3d &vec)
 {
     x -= vec.x;
     y -= vec.y;
@@ -142,12 +142,12 @@ PHVec3d PHVec3d::operator * (PHScalar mul)
     return PHVec3d(x * mul, y * mul, z * mul);
 }
 
-PHVec2d operator * (PHScalar mul, PHVec2d &vec)
+PHVec2d operator * (PHScalar mul, const PHVec2d &vec)
 {
     return PHVec2d(vec.x * mul, vec.y * mul);
 }
 
-PHVec3d operator * (PHScalar mul, PHVec3d &vec)
+PHVec3d operator * (PHScalar mul, const PHVec3d &vec)
 {
     return PHVec3d(vec.x * mul, vec.y * mul, vec.z * mul);
 }
