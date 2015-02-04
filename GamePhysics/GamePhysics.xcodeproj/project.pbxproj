@@ -24,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A56D18501A82BFB9000FC05F /* PHEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHEngine.h; sourceTree = "<group>"; };
 		A57A99B81A6FAE3C0096124A /* GamePhysics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GamePhysics; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57A99BB1A6FAE3C0096124A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A5FAA87E1A80EB6A009E4B3F /* PHVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHVector.h; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		A5FAA87C1A80EB6A009E4B3F /* PhysicsLib */ = {
 			isa = PBXGroup;
 			children = (
+				A56D18501A82BFB9000FC05F /* PHEngine.h */,
 				A5FAA87E1A80EB6A009E4B3F /* PHVector.h */,
 				A5FAA8801A80ED34009E4B3F /* PHVector.cpp */,
 			);
